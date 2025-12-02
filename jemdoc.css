@@ -389,3 +389,56 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+/* Mobile adaptation */
+@media screen and (max-width: 768px) {
+    body {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Make tables responsive */
+    table {
+        width: 100% !important;
+        display: block;
+    }
+    
+    tbody, tr, td {
+        display: block;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+    
+    /* Reset fixed widths in table cells */
+    td[width] {
+        width: 100% !important;
+    }
+
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust layout content padding */
+    #layout-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    /* Adjust font sizes for better readability */
+    h1 { font-size: 150%; }
+    h2 { font-size: 120%; }
+    
+    /* Fix navigation menu spacing */
+    #layout-menu {
+        padding: 5px 0;
+    }
+    #layout-menu a {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+}
+
